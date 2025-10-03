@@ -10,3 +10,10 @@ echo "My Name is $VARIABLE1 $VARIABLE2"
 DATE=$(date)
 
 echo "Dtae and Time is : $DATE"
+
+#For Dynamic inputs - Inputs from the customer while running time 
+
+VARIABLE3=$1
+VARIABLE4=$2
+
+echo "I am Learning : $1 - $2" 
