@@ -17,3 +17,9 @@ echo "1st Fruit : ${FRUITS[0]}"
 
 echo "All Fruits : ${FRUITS[@]}"    # Print All fruits
 
+
+echo "How many args passed : $#"
+
+echo "All args passed : $@"
+
+echo "Script name : $0"

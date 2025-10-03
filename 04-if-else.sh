@@ -9,7 +9,7 @@ else
     echo "Given Number $NUMBER Is Lessthen 100"
 fi 
 
-# fi - Denotes end of the if-else block 
+# fi - Denotes end of the if-else block  - condition end.
 
 # if [ "$NUMBER" -gt 100 ]   - The spacing is mandatory.
 

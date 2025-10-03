@@ -27,3 +27,5 @@ echo "Error : Installing git is failed"
 else
 echo "The git installation was sucesss"
 fi
+
+# here the code (installation validatios) was used multiple time for avoiding this will use functions.

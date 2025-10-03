@@ -1,1 +1,23 @@
 1. In shell script wont stop the execution if it faces error. It is our responsibilty to check and proceed.
+
+2. For avoid this issue There is a concept - EXIT Status 
+
+3. EXIT Status - Here we can check the previous command was sucess or not 
+After completion of an command if we print - echo $? - It will print the number if '0' - it was ssucesss. or 'other then' 0 its failur 
+
+
+Functions - For reducing the repeating code.
+
+Storing Logs 
+--------------
+
+1 for sucess logs.
+2 for failed logs.
+& for sucess and failed logs.
+
+EX: ls -l 1>temp.log     -- this will store the log files in to the temp.log insted of desplayig in the console.
+
+> - this will append the content. If we need to add the data will use >>
+
+ls -l $>> temp.log
+

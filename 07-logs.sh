@@ -2,6 +2,10 @@
 
 ID=$(id -u)
 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+
+LOGFILE="/temp/$0-$TIMESTAM.log"
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
@@ -19,8 +23,8 @@ else
     echo "The person was a root user : ID - $ID"
 fi
 
-yum install mysql -y 
+yum install mysql -y $>> $LOGFILE
 VALIDATE $? "mysql"
 
-yum install git -y 
+yum install git -y $>> $LOGFILE
 VALIDATE $? "git"
