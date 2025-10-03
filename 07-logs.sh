@@ -9,7 +9,7 @@ LOGFILE="/temp/$0-$TIMESTAM.log"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo "Error : Installing $2 FAILED"
+        echo "Error : Installing $2 FAILED" 
     else
         echo "Installation $2 SUCESS"
     fi
