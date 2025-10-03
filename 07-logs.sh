@@ -23,8 +23,8 @@ else
     echo "The person was a root user : ID - $ID"
 fi
 
-yum install mysql -y $>> $LOGFILE
+yum install mysql -y &>> $LOGFILE
 VALIDATE $? "mysql"
 
-yum install git -y $>> $LOGFILE
+yum install git -y &>> $LOGFILE
 VALIDATE $? "git"
