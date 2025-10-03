@@ -17,3 +17,4 @@ then
 echo "Error : Installing mysql is failed"
 else
 echo "The mysql installation was sucesss"
+fi
