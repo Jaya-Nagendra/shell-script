@@ -14,6 +14,8 @@ Y="\e[33m"
 
 N="\e[0m"
 
+echo "Script Started executing at $TIMESTAMP" &>>$LOGFILE
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
