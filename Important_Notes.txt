@@ -1,0 +1,1 @@
+1. In shell script wont stop the execution if it faces error. It is our responsibilty to check and proceed.
