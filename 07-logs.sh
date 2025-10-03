@@ -6,21 +6,29 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
+R="\e[31m"
+
+G="\e[32m"
+
+Y="\e[33m"
+
+N="\e[0m"
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then 
-        echo "Error : Installing $2 FAILED" 
+        echo "Error : Installing $2 $R FAILED $N" 
     else
-        echo "Installation $2 SUCESS"
+        echo "Installation $2 $G SUCESS $N"
     fi
 }
 
 if [ $ID -ne 0 ]
 then 
-    echo "Error: This user $ID was not a root user"  #If its not sucess also it will go for instalation but there linux will give error for avoiding this will use EXIT Code.
+    echo "$R Error: Your not a root user $N"  #If its not sucess also it will go for instalation but there linux will give error for avoiding this will use EXIT Code.
     exit 1 # you can give other than 0
 else 
-    echo "The person was a root user : ID - $ID"
+    echo "$G You are root user $N"
 fi
 
 yum install mysql -y &>> $LOGFILE
