@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#09-install_packages.sh
-
 ID=$(id -u)
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
