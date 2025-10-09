@@ -22,7 +22,7 @@ EX: ls -l 1>temp.log     -- this will store the log files in to the temp.log ins
 ls -l $>> temp.log
 
 
-Color codes for text - Foe enabling color need to give -e
+Color codes for text - For enabling color need to give -e
 ....................
 RED - \e[31m
 
