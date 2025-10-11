@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE=/etc/passed
+FILE=/etc/passwd
 
 R="\e[31m"
 
