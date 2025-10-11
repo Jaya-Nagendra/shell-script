@@ -1,13 +1,13 @@
 #!/bin/bash
 
 NAME=""
-WISHES=""
+WISHES="Good morning"
 
 USAGE(){
     echo "USAGE:: $(basename $0) -n <name> -w <wishes>"
     echo "Options::"
     echo "-n, Specify the name (mandatory)"
-    echo "-w, Specify the wishes (ex-good morning)"
+    echo "-w, Specify the wishes (Optional by default is good morning)"
     echo "-h, Display help and exit"
 }
 
@@ -20,9 +20,11 @@ while getopts ":n:w:h" opt; do
      esac
 done
 
-if [ -z "$NAME" ] || [ -z "$WISHES" ]
+# if [ -z "$NAME" ] || [ -z "$WISHES" ]
+
+if [ -z "$NAME" ]
 then 
-    echo "ERROR: Both -n and -w are mandatory options."
+    echo "ERROR: Both -n is mandatory options."
     USAGE
     exit 1
 
