@@ -2,6 +2,14 @@
 
 SOURCE_DIR="/tmp/shellscript-logs"
 
+R="\e[31m"
+
+G="\e[32m"
+
+Y="\e[33m"
+
+N="\e[0m"
+
 if [ ! -d $SOURCE_DIR ] # -d will check weather the directory available or not 
 then
     echo -e "$R Source directory : $SOURCE_DIR does not exists. $N"
