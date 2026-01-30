@@ -8,7 +8,7 @@ if [ $USERID -ne 0 ]; then
 echo "Run this script with root user"
 exit 1
 fi
-mkdir -p LOGFOLDER
+mkdir -p $LOGFOLDER
 
 VALIDATE(){
     if [ $1 -eq 0 ]; then
