@@ -2,7 +2,7 @@
 USERID=$(id -u)
 
 LOGFOLDER="/var/log/shell"
-LOGFILE="/$LOGFOLDER/$0.log"
+LOGFILE="$LOGFOLDER/$0.log"
 
 if [ $USERID -ne 0 ]; then
 echo "Run this script with root user"
@@ -18,5 +18,5 @@ VALIDATE(){
     fi
 }
 
-dnf install mysql -y &>> $LOGFILE
+dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Mysql instalation"
