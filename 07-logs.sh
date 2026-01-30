@@ -1,7 +1,7 @@
 #!/bin/bash
 USERID=$(id -u)
 
-LOGFOLDER="/var/logs/shell"
+LOGFOLDER="/var/log/shell"
 LOGFILE="$LOGFOLDER/$0.log"
 
 if [USERID -ne 0 ]; then
