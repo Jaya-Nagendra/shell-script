@@ -7,6 +7,15 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
-dnf install nginx -y
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+        echo "$2 .... FAILURE"
+        exit 1
+        else
+        echo "$2 .... SUCCESS"
+    fi
 
-echo "Instalation of nginx was completed"
+}
+
+dnf install nginx -y
+VALIDATE $? "Nginx installation"
