@@ -18,5 +18,5 @@ VALIDATE(){
     fi
 }
 
-dnf install mysql -y &>>$LOGFILE
-VALIDATE $? "Mysql instalation"
+dnf install nginx -y &>>$LOGFILE
+VALIDATE $? "nginx instalation"
