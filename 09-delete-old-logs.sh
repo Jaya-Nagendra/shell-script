@@ -20,7 +20,7 @@ if [ -z "$FILES_TO_DELETE" ]; then
     echo "No files older than 14 days to delete."
   else
     while IFS= read -f filepath; do
-    echo "deleting file "$filepath"
+    echo "Deleting file: $filepath"
     rm -f $filepath
     echo "deleted file: $filepath"
     done <<< $FILES_TO_DELETE        
